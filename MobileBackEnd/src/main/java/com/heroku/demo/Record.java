@@ -18,42 +18,40 @@ public class Record {
     private String surname;
 
 
-	public void setSurname(String surname)
-	{
-		this.surname = surname;
-	}
-	
-   public void setId(long id)
-   {
+
+
+   public long getId() {
+        return id;
+    }	
+   public void setId(long id) {
 	   this.id = id;
    }
    
-   public void setName(String name)
-   {
+   public void setName(String name) {
 	   this.name = name;
    }
-   
-   public void setIdno(String idno)
-   {
-	   this.idno = idno;
-   }
-   
-   
-    public long getId()
-    {
-        return id;
-    }
-    public String getName() {
+   public String getName() {
         return name;
     }
-
-    public String getSurName() {
+   
+   
+ public void setSurname(String surname) {
+      this.surname = surname;
+ }
+    
+ public String getSurName() {
         return surName;
-    }
+    }   
+    
+
+    public void setIdno(String idno) {
+	   this.idno = idno;
+   }
 
     public String getIdno() {
         return idno;
     }
+    
 
  }
     
