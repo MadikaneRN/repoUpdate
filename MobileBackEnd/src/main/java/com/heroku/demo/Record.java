@@ -13,51 +13,48 @@ public class Record {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    private String idno;
+    private String name;
+    private String surname;
 
-    private String animalname;
-    
-    private String adoptername;
-    private String adoptersurname;
-    private String phonenumber;
-    
-    public long getId(){
+
+	public void setSurname(String surname)
+	{
+		this.surname = surname;
+	}
+	
+   public void setId(long id)
+   {
+	   this.id = id;
+   }
+   
+   public void setName(String name)
+   {
+	   this.name = name;
+   }
+   
+   public void setIdno(String idno)
+   {
+	   this.idno = idno;
+   }
+   
+   
+    public long getId()
+    {
         return id;
     }
-    public void setId(long id){
-        this.id = id;
-    }
-   
-    public String getAnimalname() {
-        return animalname;
+    public String getName() {
+        return name;
     }
 
-    public void setAnimalname(String animalname) {
-        this.animalname = animalname;
-    }
-     public String getPhonenumber() {
-        return phonenumber;
+    public String getSurName() {
+        return surName;
     }
 
-    public void setPhonenumber(String phonenumber) {
-        this.phonenumber = phonenumber;
-    }
-    
-     public String getAdoptername() {
-        return adoptername;
+    public String getIdno() {
+        return idno;
     }
 
-    public void setAdoptername(String adoptername) {
-        this.adoptername = adoptername;
-    }
-    
-     public String getAdoptersurname() {
-        return adoptersurname;
-    }
-
-    public void setAdoptersurname(String adoptersurname) {
-        this.adoptersurname = adoptersurname;
-    }
-    
  }
     
     
