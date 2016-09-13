@@ -25,8 +25,10 @@
                 <div class="form-group">
                    <label for="data">Client Name</label>
                     <input id="data" type="text" class="form-control" placeholder="First name" th:field="*{name}" />
-                    <label for="data">Client Id</label>
+                    <label for="data">Client Id Number</label>
                     <input id="data" type="text" class="form-control" placeholder="ID Number" th:field="*{idno}" />
+                    <label for="data">Client Surname</label>
+                    <input id="data" type="text" class="form-control" placeholder="Surname" th:field="*{surname}" />
                   </div>
                 <button type="submit" class="btn btn-default">Add</button>
             </form>
@@ -46,6 +48,7 @@
                     <tr th:each="record : ${records}">
                         <td th:text="${record.id}">Some text</td>
                         <td th:text="${record.name}">Some text</td>
+                        <td th:text="${record.surname}">Some text</td>
                         <td th:text="${record.idno}">Some text</td>
                 </tr>
                 </tbody>
